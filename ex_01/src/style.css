@@ -1,0 +1,20 @@
+body {
+
+    background: #fff url('./') 0 0 no-repeat;
+
+
+}
+
+@font-face {
+    font-family: 'MyFont';
+    src: url('./iconfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+body .blue {
+    background-color: skyblue;
+
+    background: #fff url('./timg.jpg') 0 0 no-repeat;
+    font-family: 'MyFont';
+}
