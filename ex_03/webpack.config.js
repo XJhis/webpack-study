@@ -33,14 +33,11 @@ module.exports = {
             // hash: true,
         })
     ],
-    module: {
+    module: { //模块
         rules: [{
-            test: '/\.css$/i',
-            use: [{
-                loader: 'style-loader'
-            }, {
-                loader: 'css-loader'
-            }],
+            test: '/\.css$/',
+            //css-loader是
+            use: ['style-loader', 'css-loader'],
         }]
     }
 
