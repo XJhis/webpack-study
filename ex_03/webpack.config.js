@@ -3,6 +3,8 @@ const path = require('path');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
+const {CleanWebpackPlugin } = require('clean-webpack-plugin');
+
 // console.log(path.resolve(__dirname, 'dist'))
 
 module.exports = {
@@ -22,6 +24,7 @@ module.exports = {
         path: path.resolve(__dirname, 'build')
     },
     plugins: [
+        new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
             //Html的title
             title: 'myApp',
@@ -35,13 +38,17 @@ module.exports = {
     ],
     module: {
         rules: [{
-            test: '/\.css$/i',
+            test: /\.css$/i, //正则不要加引号啊，fk
             use: [{
-                loader: 'style-loader'
+                loader: 'style-loader',
+                options: {
+                     injectType: 'styleTag'
+                }
             }, {
                 loader: 'css-loader'
             }],
         }]
-    }
+    },
+    
 
 }
