@@ -36,8 +36,9 @@ module.exports = {
             // hash: true,
         })
     ],
-    module: {
+    module: { //模块
         rules: [{
+<<<<<<< HEAD
             test: /\.css$/i, //正则不要加引号啊，fk
             use: [{
                 loader: 'style-loader',
@@ -47,6 +48,11 @@ module.exports = {
             }, {
                 loader: 'css-loader'
             }],
+=======
+            test: '/\.css$/',
+            //css-loader是
+            use: ['style-loader', 'css-loader'],
+>>>>>>> 118cd7a7a007ef41032baef19dda9883f570c229
         }]
     },
     

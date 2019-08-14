@@ -8,7 +8,10 @@
     "dev": "webpack-dev-server"
   },
   "devDependencies": {
+<<<<<<< HEAD
     "clean-webpack-plugin": "^3.0.0",
+=======
+>>>>>>> 118cd7a7a007ef41032baef19dda9883f570c229
     "css-loader": "^3.2.0",
     "html-webpack-plugin": "^3.2.0",
     "style-loader": "^1.0.0",
