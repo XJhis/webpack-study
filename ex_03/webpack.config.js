@@ -3,6 +3,8 @@ const path = require('path');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
+<<
+<< << < HEAD
 //Cleaning up the /dist folder
 const {
     CleanWebpackPlugin
@@ -16,7 +18,12 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const TerserJSPlugin = require('terser-webpack-plugin');
 
 //压缩提取出来的css的插件
-const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin'); ===
+=== =
+const {
+    CleanWebpackPlugin
+} = require('clean-webpack-plugin'); >>>
+>>> > 3609141 ce9c77e1b56171db09f937e2c8a35973d
 
 // console.log(path.resolve(__dirname, 'dist'))
 
@@ -42,6 +49,7 @@ module.exports = {
         // publicPath: '/assets/'
     },
     plugins: [
+        new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
             //Html的title
             title: 'myApp',
@@ -127,5 +135,6 @@ module.exports = {
     externals: {
         jquery: 'jQuery'
     }
+
 
 }

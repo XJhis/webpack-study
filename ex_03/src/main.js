@@ -3,7 +3,14 @@ require('./css/a.css');
 
 // require('./css/common/base.css')
 
-// import cssA from "./css/a.css";
+
+
+require('./css/a.css');
+
+import cssA from './css/a.css';
+
+console.log(cssA)
+
 
 // let myName = '熊炬辉'
 // console.log(name);
