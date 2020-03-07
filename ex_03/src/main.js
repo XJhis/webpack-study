@@ -1,15 +1,15 @@
 // var name = require('./js/a');
-require('./css/a.css');
+
 
 // require('./css/common/base.css')
 
 
 
-require('./css/a.css');
 
-import cssA from './css/a.css';
 
-console.log(cssA)
+// import './css/a.css';
+// import './css/common/base.css';
+
 
 
 // let myName = '熊炬辉'
@@ -79,5 +79,7 @@ console.log(cssA)
 // img.src = img_src;
 
 // document.body.append(img)
+
+import  "./js/ajax";
 
 
