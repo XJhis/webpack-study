@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("var name = '熊炬辉'\r\n\r\nmodule.exports =  name;\n\n//# sourceURL=webpack:///./src/a.js?");
+eval("var name = '熊炬辉'\r\n\r\nmodule.exports =  name;\r\n\r\n\n\n//# sourceURL=webpack:///./src/a.js?");
 
 /***/ }),
 
@@ -104,7 +104,7 @@ eval("var name = '熊炬辉'\r\n\r\nmodule.exports =  name;\n\n//# sourceURL=web
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var aa = __webpack_require__(/*! ./a.js */ \"./src/a.js\");\r\nconsole.log(aa)\r\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("var aa = __webpack_require__(/*! ./a.js */ \"./src/a.js\");\r\nconsole.log(aa)      \r\n\r\nmodule.exports = aa;\r\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 

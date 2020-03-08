@@ -1,2 +1,4 @@
 var aa = require('./a.js');
-console.log(aa)
+console.log(aa)      
+
+module.exports = aa;

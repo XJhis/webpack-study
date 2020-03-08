@@ -1,9 +1,11 @@
 (function (modules) {
-    /******/ // The module cache
+
+    //缓存
     var installedModules = {};
-    /******/ // The require function
-    function __webpack_require__(moduleId) {
-        /******/ // Check if module is in cache
+
+    //自己实现的require函数
+    function __webpack_require__(moduleId) { //实际这就是/src/index.js
+        //判断是否有缓存
         if (installedModules[moduleId]) {
             return installedModules[moduleId].exports;
         }
@@ -95,7 +97,7 @@
     };
     /******/ // __webpack_public_path__
     __webpack_require__.p = "";
-    /******/ // Load entry module and return exports
+        
     return __webpack_require__(__webpack_require__.s = "./src/index.js");
 })
 
@@ -104,7 +106,7 @@
     "./src/a.js":
 
         (function (module, exports) {
-
+ 
             eval("var name = '熊炬辉'\r\n\r\nmodule.exports =  name;\n\n//# sourceURL=webpack:///./src/a.js?");
 
         }),
