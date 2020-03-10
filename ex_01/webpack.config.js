@@ -4,7 +4,7 @@ module.exports = {
 	entry: './src/index.js',
 	output: {
 		filename: 'bundle.js',
-		path: path.join(__dirname, 'dist')
+		path: path.join(__dirname, 'dist') //必须是一个绝对路径
 	},
 	module: {
 		rules: [{
